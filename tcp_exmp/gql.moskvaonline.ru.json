@@ -1,0 +1,8 @@
+{
+	"operationName": "SeoV3",
+	"variables": {
+		"key": "OTZIVI_O_PROVAIDERE",
+		"query": "providerName=seven-sky&regionUrl=moskva&sort=all&tagType=provider"
+	},
+	"query": "query SeoV3($key: String!, $query: String) {\n  seoV3(key: $key, query: $query) {\n    id\n    title\n    description\n    keywords\n    h1\n    h1After\n    main_text\n    ttltext\n    aboutWETitle\n    aboutWEText\n    faq {\n      question\n      answer\n      __typename\n    }\n    __typename\n  }\n}"
+}
